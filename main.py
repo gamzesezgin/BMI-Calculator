@@ -21,8 +21,8 @@ def button_clicked():
     weight = entry_weight.get()
     height = entry_height.get()
 
-    if weight == '' or height == '':
-        result_label.config(text="Please enter both weight and height.")
+    if weight == '' or height == '' or height == '0':
+        result_label.config(text="Please enter valid value both weight and height.")
         return
 
     try:
